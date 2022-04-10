@@ -1,5 +1,5 @@
-const User = require("./User");
 const Post = require("./Post");
+const User = require("./User");
 
 // Create associations
 // This association creates the reference for the id column in the User model to link to the corresponding foreign key pair, which is the user_id in the Post model
