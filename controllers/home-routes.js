@@ -39,6 +39,7 @@ router.get('/', (req, res) => {
   });
 
   router.get('/login', (req, res) => {
+    //session come from the login event handler script posting user credentials to api/users/login (session created in api route)
     if(req.session.loggedIn) {
       res.redirect('/');
       return;
